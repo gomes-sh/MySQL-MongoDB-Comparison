@@ -1,5 +1,20 @@
 # MySQL-MongoDB-Comparison
 
-A current Work In Progress, this repository aims to compare MongoDB and MySQL for differences in speed in respect to running aggregate functions. Both datasets will contain the same data, with the only being changing their structure within their respective databases to fit the required format. This file will be updated at a later point as progress continues.
+This repository contains the code for a comparison of execution speed between MongoDB and SQL in regards to running aggregate functions. This is a project for a senior research class at my university.
 
-This project is for a senior level research class at my university.
+All data comes from <a href="https://www.kaggle.com/datasets/maharshipandya/-spotify-tracks-dataset">Kaggle</a>. A dataset with Spotify song information was used to test the following queries 20 times each for an average run time in milliseconds:
+<ul>
+  <li>Minimum</li>
+  <li>Maximum</li>
+  <li>Average</li>
+  <li>Sum</li>
+  <li>A count of how many songs are underneath 200,000 ms</li>
+  <li>A count of how many songs are in each genre</li>
+  <li>A search for the artist with the most songs in the dataset</li>
+</ul>
+
+**MongoDB_Queries** is a .txt file containing the queries used for MongoDB.
+
+**SQL_Queries** (NOT YET CREATED) is a file containing the queries used for SQL.
+
+**ExecutionTimeResults.R** contains the data of the 20 runs for all functions across SQL and MongoDB. It calculates the averages and plots them. (NOTE: This file is not complete.)
