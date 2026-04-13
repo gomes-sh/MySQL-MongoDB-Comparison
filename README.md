@@ -2,7 +2,7 @@
 
 This repository contains the code for a comparison of execution speed between MongoDB and SQL in regards to running aggregate functions. This is a project for a senior research class at my university.
 
-All data comes from <a href="https://www.kaggle.com/datasets/maharshipandya/-spotify-tracks-dataset">Kaggle</a>. A dataset with Spotify song information was used to test the following queries 20 times each for an average run time in milliseconds:
+All data comes from <a href="https://www.kaggle.com/datasets/maharshipandya/-spotify-tracks-dataset">Kaggle</a>. A dataset with <a href="https://www.kaggle.com/datasets/maharshipandya/-spotify-tracks-dataset?resource=download">Spotify song information</a> was used to test the following queries 20 times each for an average run time in milliseconds:
 <ul>
   <li>Minimum</li>
   <li>Maximum</li>
