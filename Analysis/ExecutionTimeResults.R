@@ -48,3 +48,12 @@ searchMost.t <- ggbarplot(searchMost, x = "names", y = "msTimes", fill = "#ad0c0
 
 
 table2 <- ggarrange(countUnder.t, countPer.t, searchMost.t, ncol = 3, nrow = 1, label.y = "Milliseconds")
+
+increases <- data.frame(
+  Command = c("Songs Per Genre", "Sum", "Under 200,000 ms", "Max", "Min", "Average", "Artist with Most Songs"),
+  PercentIncrease = c(7.6, 14.4, 27.2, 28.5, 29.8, 37.2, 62.5),
+  Slower = c("MongoDB", "MongoDB", "MongoDB", "MongoDB", "MongoDB", "MongoDB", "SQL")
+)
+
+increases.t <- ggbarplot(increases, x = "Command", y = "PercentIncrease", fill = "Slower", label = TRUE, lab.col = "white", lab.pos = "in", ylab = "Percent Increase", xlab = "Aggregate Queries")
+
